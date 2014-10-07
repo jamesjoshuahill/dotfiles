@@ -1,0 +1,52 @@
+[user]
+	name = Josh Hill
+	email = jhill@globalpersonals.co.uk
+[push]
+  default = upstream
+[branch]
+  autosetuprebase = always
+[merge]
+  ff = false
+[core]
+  editor = subl -w
+  autocrlf = input
+  safecrlf = true
+  excludesfile = /Users/joshhill/.gitignore
+[alias]
+  aa = add --all
+  br = branch
+  co = checkout
+  ci = commit
+  cim = commit -m
+  cia = commit --amend
+  cp = cherry-pick
+  dh = diff HEAD
+  dm = diff master
+  fo = fetch origin
+  h = log --pretty=format:'%Cblue%h%Creset %C(yellow)%d%Creset %s  %Cgreen%cr, %an' --abbrev-commit --date=relative --graph
+  pl = pull --rebase
+  pub = !git push -u origin $(git symbolic-ref --short -q HEAD)
+  rb = rebase
+  rba = rebase --abort
+  rbc = rebase --continue
+  rbi = rebase --interactive
+  rht = !git stash && git reset --hard $(git rev-parse --abbrev-ref --symbolic-full-name @{u})
+  pf = push --force
+  st = status -sb
+  undo = reset HEAD~1
+[color]
+  branch = auto
+  diff = auto
+  interactive = auto
+  pager = true
+  status = auto
+  ui = true
+[color "status"]
+  added = green
+  changed = yellow
+  untracked = red
+[filter "media"]
+  clean = git-media-clean %f
+  smudge = git-media-smudge %f
+[mergetool]
+  keepBackup = true
