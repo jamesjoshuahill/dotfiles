@@ -2,7 +2,7 @@ eval "$(rbenv init -)"
 
 PATH=/usr/local/bin:$PATH:/usr/local/sbin:~/bin
 
-export CDPATH=".:~:~/development"
+export CDPATH=".:~:~/development:~/personal"
 
 # PS1 with git branch
 parse_git_branch() {
@@ -35,6 +35,7 @@ alias qa4='ssh jhill@integration-qa-4.staging.whitelabeldating.com'
 alias qa5='ssh jhill@integration-qa-5.staging.whitelabeldating.com'
 alias staging1='ssh jhill@staging1.whitelabeldating.com'
 alias staging2='ssh jhill@staging2.whitelabeldating.com'
+alias t='gittower .'
 
 # Exercism.io
 alias es='exercism submit'
