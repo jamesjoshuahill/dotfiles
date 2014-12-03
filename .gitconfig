@@ -19,6 +19,7 @@
   ci = commit
   cim = commit -m
   cia = commit --amend
+  ciaa = commit -a --amend
   cp = cherry-pick
   dh = diff HEAD
   dm = diff master
