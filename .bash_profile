@@ -19,9 +19,11 @@ fi
 source ~/.git-completion.bash
 
 # Aliases
+alias gs='git st'
 alias fs='foreman start'
 alias irb='irb -r irb/completion'
 alias s='subl .'
+alias be='bundle exec'
 alias bi='bundle install'
 alias ll='ls -al'
 alias r='rspec'
@@ -31,9 +33,11 @@ alias vm='ssh root@development.vm'
 alias qa1='ssh jhill@integration-qa-1.staging.whitelabeldating.com'
 alias qa2='ssh jhill@integration-qa-2.staging.whitelabeldating.com'
 alias qa3='ssh jhill@integration-qa-3.staging.whitelabeldating.com'
+alias qa3s='ssh site@integration-qa-3.staging.whitelabeldating.com'
 alias qa4='ssh jhill@integration-qa-4.staging.whitelabeldating.com'
 alias qa5='ssh jhill@integration-qa-5.staging.whitelabeldating.com'
 alias staging1='ssh jhill@staging1.whitelabeldating.com'
+alias staging1s='ssh site@staging1.whitelabeldating.com'
 alias staging2='ssh jhill@staging2.whitelabeldating.com'
 alias t='gittower .'
 
