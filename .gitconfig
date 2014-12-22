@@ -1,6 +1,6 @@
 [user]
-	name = Josh Hill
-	email = jhill@globalpersonals.co.uk
+  name = Josh Hill
+  email = jhill@globalpersonals.co.uk
 [push]
   default = upstream
 [branch]
@@ -17,9 +17,9 @@
   br = branch -vv
   co = checkout
   ci = commit
-  cim = commit -m
   cia = commit --amend
-  ciaa = commit -a --amend
+  ciam = commit -am
+  cim = commit -m
   cp = cherry-pick
   dh = diff HEAD
   dm = diff master

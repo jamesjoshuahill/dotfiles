@@ -32,3 +32,4 @@ ssh-copy-id
 tig
 tree
 typespeed
+xz
