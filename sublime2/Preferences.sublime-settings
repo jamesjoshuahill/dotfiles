@@ -1,7 +1,7 @@
 {
 	"bold_folder_labels": true,
 	"caret_style": "phase",
-	"color_scheme": "Packages/Color Scheme - Default/Cobalt.tmTheme",
+	"color_scheme": "Packages/Theme - Cobalt2/cobalt2.tmTheme",
 	"fade_fold_buttons": false,
 	"folder_exclude_patterns":
 	[
@@ -14,13 +14,20 @@
 		"tmp",
 		"doc/metrics",
 		".bundle",
-		".sass-cache"
+		".sass-cache",
+		"_site"
 	],
 	"font_size": 14.0,
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"Vintage"
+		"Vintage",
+		"Markdown"
+	],
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
 	],
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
@@ -30,6 +37,7 @@
 		100
 	],
 	"tab_size": 2,
+	"theme": "Cobalt2.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_automatic_white_space": true,
 	"trim_trailing_white_space_on_save": true,

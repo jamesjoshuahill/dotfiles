@@ -14,7 +14,7 @@
   excludesfile = /Users/joshhill/.gitignore
 [alias]
   aa = add --all
-  br = branch
+  br = branch -vv
   co = checkout
   ci = commit
   cim = commit -m

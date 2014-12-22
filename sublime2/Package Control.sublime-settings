@@ -1,0 +1,17 @@
+{
+	"installed_packages":
+	[
+		"DashDoc",
+		"GitGutter",
+		"Google Spell Check",
+		"Guard",
+		"Haml",
+		"HighlightDuplicates",
+		"jQuery",
+		"Markdown Preview",
+		"MarkdownEditing",
+		"Package Control",
+		"Sass",
+		"Theme - Cobalt2"
+	]
+}
