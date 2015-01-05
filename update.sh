@@ -19,5 +19,8 @@ cp ~/.gemrc .
 # Bundler
 cp ~/.bundle/config ./.bundle/
 
+# ~/bin
+cp ~/bin/* ./bin/
+
 # Sublime Text 2
 cp ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/*.sublime-settings sublime2/
