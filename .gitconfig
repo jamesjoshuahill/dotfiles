@@ -18,7 +18,7 @@
   co = checkout
   ci = commit
   cia = commit --amend
-  ciam = commit -am
+  cif = commit --fixup
   cim = commit -m
   cp = cherry-pick
   dh = diff HEAD
@@ -32,6 +32,7 @@
   rba = rebase --abort
   rbc = rebase --continue
   rbi = rebase --interactive
+  rbia = rebase --interactive --autosquash
   rht = !git stash && git reset --hard $(git rev-parse --abbrev-ref --symbolic-full-name @{u})
   pf = push --force
   st = status -sb
