@@ -32,6 +32,7 @@ redis
 ruby-build
 ssh-copy-id
 tig
+tmux
 tree
 typespeed
 xz
