@@ -3,6 +3,7 @@ autoconf
 automake
 bash-completion
 cmake
+colordiff
 curl
 exercism
 freetype
