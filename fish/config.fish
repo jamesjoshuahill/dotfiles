@@ -1,0 +1,31 @@
+status --is-interactive; and . (rbenv init -|psub)
+
+# Aliases
+alias bake='bundle exec rake'
+alias be='bundle exec'
+alias bi='bundle install'
+alias es='exercism submit'
+alias ef='exercism fetch'
+alias fs='foreman start'
+alias irb='irb -r irb/completion'
+alias j='jekyll serve'
+alias ll='ls -alG'
+alias ls='ls -G'
+alias o='open .'
+alias r='rspec'
+alias rs='rspec spec'
+alias rt='rake test'
+alias s='subl .'
+alias sbp='subl ~/.bash_profile'
+alias sgc='subl ~/.gitconfig'
+alias t='gittower .'
+
+# Testing boxes
+alias vm='ssh root@development.vm'
+alias qa1='ssh site@integration-qa-1.staging.whitelabeldating.com'
+alias qa2='ssh site@integration-qa-2.staging.whitelabeldating.com'
+alias qa3='ssh site@integration-qa-3.staging.whitelabeldating.com'
+alias qa4='ssh site@integration-qa-4.staging.whitelabeldating.com'
+alias qa5='ssh site@integration-qa-5.staging.whitelabeldating.com'
+alias staging1='ssh site@staging1.whitelabeldating.com'
+alias staging2='ssh site@staging2.whitelabeldating.com'
