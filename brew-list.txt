@@ -11,6 +11,7 @@ freetype
 geoip
 git
 gnupg
+go
 graphviz
 imagemagick
 jpeg
@@ -19,6 +20,8 @@ libmemcached
 libpng
 libtool
 memcached
+mercurial
+ngrok
 openssl
 percona-server
 phantomjs
