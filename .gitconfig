@@ -25,7 +25,7 @@
   dm = diff master
   fo = fetch origin
   h = log --pretty=format:'%Cblue%h%Creset %C(yellow)%d%Creset %s  %Cgreen%cr, %an' --abbrev-commit --date=relative --graph
-  hb = !git log master..HEAD --pretty=format:'%Cblue%h%Creset %C(yellow)%d%Creset %s  %Cgreen%cr, %an' --abbrev-commit --date=relative --graph
+  hb = !git log origin/master..HEAD --pretty=format:'%Cblue%h%Creset %C(yellow)%d%Creset %s  %Cgreen%cr, %an' --abbrev-commit --date=relative --graph
   pl = pull --rebase
   pub = !git push -u origin $(git symbolic-ref --short -q HEAD)
   rb = rebase
