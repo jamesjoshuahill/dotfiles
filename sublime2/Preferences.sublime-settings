@@ -12,7 +12,7 @@
 		"coverage",
 		"log",
 		"tmp",
-		"doc/metrics",
+		"doc",
 		".bundle",
 		".sass-cache",
 		"_site"
