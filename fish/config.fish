@@ -19,13 +19,3 @@ alias s='subl .'
 alias sbp='subl ~/.bash_profile'
 alias sgc='subl ~/.gitconfig'
 alias t='gittower .'
-
-# Testing boxes
-alias vm='ssh root@development.vm'
-alias qa1='ssh site@integration-qa-1.staging.whitelabeldating.com'
-alias qa2='ssh site@integration-qa-2.staging.whitelabeldating.com'
-alias qa3='ssh site@integration-qa-3.staging.whitelabeldating.com'
-alias qa4='ssh site@integration-qa-4.staging.whitelabeldating.com'
-alias qa5='ssh site@integration-qa-5.staging.whitelabeldating.com'
-alias staging1='ssh site@staging1.whitelabeldating.com'
-alias staging2='ssh site@staging2.whitelabeldating.com'
