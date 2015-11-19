@@ -20,6 +20,7 @@ cp ~/.bundle/config ./.bundle/
 
 # Sublime Text 2
 cp ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/*.sublime-settings sublime2/
+cp ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/Default\ \(OSX\).sublime-keymap sublime2/
 
 # Fish shell config
 cp ~/.config/fish/config.fish ./fish/

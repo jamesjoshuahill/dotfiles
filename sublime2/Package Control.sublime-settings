@@ -1,23 +1,19 @@
 {
+	"bootstrapped": true,
 	"in_process_packages":
 	[
 	],
 	"installed_packages":
 	[
+		"Babel Snippets",
 		"DashDoc",
-		"Elixir",
 		"GitGutter",
 		"GitHubinator",
-		"Google Spell Check",
-		"Guard",
-		"Haml",
-		"HighlightDuplicates",
-		"jQuery",
-		"LaTeX Word Count",
+		"LESS",
 		"Markdown Preview",
 		"MarkdownEditing",
 		"Package Control",
-		"Sass",
+		"SublimeGit",
 		"Theme - Cobalt2"
 	]
 }
