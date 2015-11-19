@@ -1,28 +1,26 @@
 [user]
   name = Josh Hill
-  email = jhill@globalpersonals.co.uk
+  email = josh@cloudcredo.com
 [push]
   default = upstream
 [branch]
   autosetuprebase = always
-[merge]
-  ff = false
 [core]
   editor = subl -w
   autocrlf = input
   safecrlf = true
-  excludesfile = /Users/joshhill/.gitignore
+  excludesfile = /Users/josh/.gitignore
 [alias]
   aa = add --all
   br = branch -vv
   co = checkout
-  ci = commit
-  cia = commit --amend
-  cif = commit --fixup
-  cim = commit -m
+  ci = duet-commit
+  cia = duet-commit --amend
+  cif = duet-commit --fixup
+  cim = duet-commit -m
   cp = cherry-pick
   dh = diff HEAD
-  dm = diff master
+  dm = diff origin/master
   fo = fetch origin
   h = log --pretty=format:'%Cblue%h%Creset %C(yellow)%d%Creset %s  %Cgreen%cr, %an' --abbrev-commit --date=relative --graph
   hb = !git log origin/master..HEAD --pretty=format:'%Cblue%h%Creset %C(yellow)%d%Creset %s  %Cgreen%cr, %an' --abbrev-commit --date=relative --graph
@@ -34,7 +32,7 @@
   rbi = rebase --interactive
   rbia = rebase --interactive --autosquash
   rht = !git stash && git reset --hard $(git rev-parse --abbrev-ref --symbolic-full-name @{u})
-  pf = push --force
+  pf = !git fo && git push --force
   st = status -sb
   undo = reset HEAD~1
 [color]
@@ -48,8 +46,3 @@
   added = green
   changed = yellow
   untracked = red
-[filter "media"]
-  clean = git-media-clean %f
-  smudge = git-media-smudge %f
-[mergetool]
-  keepBackup = true
