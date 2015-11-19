@@ -3,7 +3,6 @@
 cp ~/.bash_profile .
 
 # Git
-cp ~/.git-completion.bash .
 cp ~/.gitconfig .
 cp ~/.gitignore .
 
