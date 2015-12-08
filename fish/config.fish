@@ -5,6 +5,10 @@ status --is-interactive; and . (rbenv init -|psub)
 set -x GOPATH $HOME/go
 
 # aliases
+alias a='atom .'
+alias abp='atom ~/.bash_profile'
+alias agc='atom ~/.gitconfig'
+alias afc='atom ~/.config/fish/config.fish'
 alias bake='bundle exec rake'
 alias be='bundle exec'
 alias bi='bundle install'
