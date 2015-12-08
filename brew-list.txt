@@ -1,5 +1,6 @@
 autoconf
 bazaar
+boost
 boot2docker
 chromedriver
 cmake
@@ -10,7 +11,6 @@ fish
 git
 git-duet
 go
-go12
 godep
 htop-osx
 httpie
