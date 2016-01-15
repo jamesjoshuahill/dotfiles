@@ -15,11 +15,13 @@ godep
 htop-osx
 httpie
 hub
+jq
 leiningen
 libevent
 mercurial
 mongodb26
 mysql
+oniguruma
 openssl
 pcre
 pkg-config
