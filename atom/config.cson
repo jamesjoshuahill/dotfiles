@@ -1,0 +1,25 @@
+"*":
+  "exception-reporting":
+    userId: "54cad419-1011-c7a8-be9b-7f87ea720c11"
+  welcome:
+    showOnStartup: false
+  core:
+    destroyEmptyPanes: false
+  "linter-js-standard":
+    honorStyleSettings: true
+    checkStyleDevDependencies: true
+  editor:
+    invisibles: {}
+    fontFamily: "Inconsolata"
+    fontSize: 16
+    tabType: "soft"
+  "standard-formatter": {}
+  "linter-less":
+    ieCompatibilityChecks: false
+    ignoreUndefinedVariables: true
+  "git-diff": {}
+  "one-dark-ui": {}
+  linter:
+    lintOnFlyInterval: 500
+    errorPanelHeight: 77
+  "go-plus": {}

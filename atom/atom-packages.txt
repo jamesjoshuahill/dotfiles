@@ -1,0 +1,8 @@
+color-picker
+go-plus
+indent-guide-improved
+linter-js-standard
+linter-less
+linter
+pretty-json
+standard-formatter

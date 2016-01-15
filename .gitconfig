@@ -6,7 +6,7 @@
 [branch]
   autosetuprebase = always
 [core]
-  editor = subl -w
+  editor = atom --wait
   autocrlf = input
   safecrlf = true
   excludesfile = /Users/josh/.gitignore
