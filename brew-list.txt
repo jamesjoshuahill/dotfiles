@@ -4,8 +4,12 @@ boost
 boot2docker
 chromedriver
 cmake
+dinghy
 direnv
+dnsmasq
 docker
+docker-compose
+docker-machine
 exercism
 fish
 git
@@ -18,6 +22,7 @@ hub
 jq
 leiningen
 libevent
+libyaml
 mercurial
 mongodb26
 mysql
@@ -27,6 +32,8 @@ pcre
 pkg-config
 postgresql
 rbenv
+rbenv-binstubs
+rbenv-default-gems
 rbenv-gemset
 readline
 reattach-to-user-namespace
@@ -34,11 +41,13 @@ redis
 ruby-build
 scons
 spiff
+spruce
 the_silver_searcher
 thefuck
 tig
 tmux
 tree
+unfs3
 watch
 wget
 xz
