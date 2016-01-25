@@ -1,5 +1,13 @@
 #! /bin/bash
 
+# Bash
+cp ~/.bash_profile .
+
+# Powerline shell
+cp ~/.powerline-shell/.gitremote powerline-shell/
+cp ~/.powerline-shell/config.py powerline-shell/
+cp ~/.powerline-shell/powerline-shell.py powerline-shell/
+
 # Fish
 cp ~/.config/fish/config.fish fish/
 cp ~/.config/fish/fishd.* fish/

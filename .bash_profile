@@ -1,0 +1,45 @@
+# append to the Bash history file, rather than overwriting it
+shopt -s histappend
+
+# direnv
+eval "$(direnv hook bash)"
+
+# rbenv
+eval "$(rbenv init -)"
+export PATH="$HOME/.rbenv/bin:$PATH"
+
+# go
+export GOPATH="$HOME/go"
+export PATH="/usr/local/go/bin:$GOPATH/bin:$PATH"
+
+# powerline shell
+function _update_ps1() {
+  PS1="$(~/.powerline-shell/powerline-shell.py $? 2> /dev/null)"
+}
+
+if [ "$TERM" != "linux" ]; then
+  PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+fi
+
+# aliases
+alias a='atom .'
+alias abp='atom ~/.bash_profile'
+alias agc='atom ~/.gitconfig'
+alias afc='atom ~/.config/fish/config.fish'
+alias bake='bundle exec rake'
+alias be='bundle exec'
+alias bi='bundle install'
+alias es='exercism submit'
+alias ef='exercism fetch'
+alias irb='irb -r irb/completion'
+alias ll='ls -alG'
+alias o='open .'
+alias r='rspec'
+alias s='subl .'
+alias sbp='subl ~/.bash_profile'
+alias sgc='subl ~/.gitconfig'
+alias sfc='subl ~/.config/fish/config.fish'
+alias t='gittower .'
+
+# ccp
+. ~/.ccp-env
