@@ -6,7 +6,7 @@
 [branch]
   autosetuprebase = always
 [core]
-  editor = atom --wait
+  editor = vim
   autocrlf = input
   safecrlf = true
   excludesfile = /Users/josh/.gitignore
@@ -14,10 +14,10 @@
   aa = add --all
   br = branch -vv
   co = checkout
-  ci = duet-commit
-  cia = duet-commit --amend
-  cif = duet-commit --fixup
-  cim = duet-commit -m
+  ci = commit --verbose
+  cia = commit --verbose --amend
+  cif = commit --verbose --fixup
+  cim = commit -m
   cp = cherry-pick
   dh = diff HEAD
   dm = diff origin/master
@@ -46,3 +46,5 @@
   added = green
   changed = yellow
   untracked = red
+[url "git@github.com:"]
+	insteadOf = https://github.com/
