@@ -5,6 +5,7 @@
     showOnStartup: false
   core:
     destroyEmptyPanes: false
+    excludeVcsIgnoredPaths: false
   "linter-js-standard":
     honorStyleSettings: true
     checkStyleDevDependencies: true
@@ -23,3 +24,4 @@
     lintOnFlyInterval: 500
     errorPanelHeight: 77
   "go-plus": {}
+  "linter-js-yaml": {}

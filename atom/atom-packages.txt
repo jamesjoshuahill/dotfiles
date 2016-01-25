@@ -2,7 +2,9 @@ color-picker
 go-plus
 indent-guide-improved
 linter-js-standard
+linter-js-yaml
 linter-less
 linter
 pretty-json
+split-diff
 standard-formatter
