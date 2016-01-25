@@ -29,6 +29,9 @@ cp ~/.gemrc .
 # Bundler
 cp ~/.bundle/config .bundle/
 
+# Vim
+cp ~/.vimrc.local .
+
 # Sublime Text 2
 cp ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/*.sublime-settings sublime2/
 cp ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/Default\ \(OSX\).sublime-keymap sublime2/
