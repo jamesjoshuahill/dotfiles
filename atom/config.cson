@@ -6,6 +6,9 @@
   core:
     destroyEmptyPanes: false
     excludeVcsIgnoredPaths: false
+    disabledPackages: [
+      "linter-js-yaml"
+    ]
   "linter-js-standard":
     honorStyleSettings: true
     checkStyleDevDependencies: true

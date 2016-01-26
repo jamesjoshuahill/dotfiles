@@ -1,6 +1,6 @@
 [user]
   name = Josh Hill
-  email = josh@cloudcredo.com
+  email = jhill@pivotal.io
 [push]
   default = upstream
 [branch]
@@ -47,4 +47,4 @@
   changed = yellow
   untracked = red
 [url "git@github.com:"]
-	insteadOf = https://github.com/
+  insteadOf = https://github.com/

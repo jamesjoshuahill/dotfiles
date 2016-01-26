@@ -48,6 +48,7 @@ tig
 tmux
 tree
 unfs3
+vim
 watch
 wget
 xz

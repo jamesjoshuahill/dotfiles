@@ -14,8 +14,8 @@ cp ~/.config/fish/fishd.* fish/
 cp ~/.config/fish/functions/*.fish fish/functions/
 
 # Git
-cp ~/.gitconfig .
-cp ~/.gitignore .
+cp ~/.gitconfig gitconfig
+cp ~/.gitignore gitignore
 
 # Brew
 brew list > brew-list.txt
@@ -25,9 +25,6 @@ cp ~/.rbenv/default-gems .rbenv/
 
 # Rubygems
 cp ~/.gemrc .
-
-# Bundler
-cp ~/.bundle/config .bundle/
 
 # Vim
 cp ~/.vimrc.local .
