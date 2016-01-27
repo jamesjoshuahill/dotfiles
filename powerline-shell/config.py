@@ -14,10 +14,10 @@ SEGMENTS = [
     'virtual_env',
 
 # Show the current user's username as in ordinary prompts
-    'username',
+#    'username',
 
 # Show the machine's hostname. Mostly used when ssh-ing into other machines
-    'hostname',
+#    'hostname',
 
 # Show a padlock when ssh-ing from another machine
     'ssh',
