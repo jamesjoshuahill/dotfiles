@@ -1,30 +1,30 @@
 "*":
-  "exception-reporting":
-    userId: "54cad419-1011-c7a8-be9b-7f87ea720c11"
-  welcome:
-    showOnStartup: false
   core:
     destroyEmptyPanes: false
-    excludeVcsIgnoredPaths: false
     disabledPackages: [
       "linter-js-yaml"
     ]
-  "linter-js-standard":
-    honorStyleSettings: true
-    checkStyleDevDependencies: true
+    excludeVcsIgnoredPaths: false
   editor:
-    invisibles: {}
     fontFamily: "Inconsolata"
     fontSize: 16
+    invisibles: {}
     tabType: "soft"
-  "standard-formatter": {}
+  "exception-reporting":
+    userId: "54cad419-1011-c7a8-be9b-7f87ea720c11"
+  "git-diff": {}
+  "go-plus": {}
+  linter:
+    errorPanelHeight: 77
+    lintOnFlyInterval: 500
+  "linter-js-standard":
+    checkStyleDevDependencies: true
+    honorStyleSettings: true
+  "linter-js-yaml": {}
   "linter-less":
     ieCompatibilityChecks: false
     ignoreUndefinedVariables: true
-  "git-diff": {}
   "one-dark-ui": {}
-  linter:
-    lintOnFlyInterval: 500
-    errorPanelHeight: 77
-  "go-plus": {}
-  "linter-js-yaml": {}
+  "standard-formatter": {}
+  welcome:
+    showOnStartup: false
