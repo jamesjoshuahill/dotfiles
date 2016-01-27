@@ -1,7 +1,7 @@
 #! /bin/bash
 
 # Bash
-cp ~/.bash_profile .
+cp ~/.bash_profile bash/bash_profile
 
 # Powerline shell
 cp ~/.powerline-shell/.gitremote powerline-shell/
@@ -14,20 +14,20 @@ cp ~/.config/fish/fishd.* fish/
 cp ~/.config/fish/functions/*.fish fish/functions/
 
 # Git
-cp ~/.gitconfig gitconfig
-cp ~/.gitignore gitignore
+cp ~/.gitconfig git/gitconfig
+cp ~/.gitignore git/gitignore
 
 # Brew
-brew list > brew-list.txt
+brew list > brew/brew-list.txt
 
 # rbenv
-cp ~/.rbenv/default-gems .rbenv/
+cp ~/.rbenv/default-gems rbenv/
 
 # Rubygems
-cp ~/.gemrc .
+cp ~/.gemrc ruby/gemrc
 
 # Vim
-cp ~/.vimrc.local .
+cp ~/.vimrc.local vim/vimrc.local
 
 # Sublime Text 2
 cp ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/*.sublime-settings sublime2/
