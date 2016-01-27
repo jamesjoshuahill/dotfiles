@@ -29,6 +29,7 @@ alias afc='atom ~/.config/fish/config.fish'
 alias bake='bundle exec rake'
 alias be='bundle exec'
 alias bi='bundle install'
+alias da='direnv allow'
 alias es='exercism submit'
 alias ef='exercism fetch'
 alias irb='irb -r irb/completion'
@@ -40,6 +41,9 @@ alias sbp='subl ~/.bash_profile'
 alias sgc='subl ~/.gitconfig'
 alias sfc='subl ~/.config/fish/config.fish'
 alias t='gittower .'
+
+# the fuck
+eval $(thefuck --alias)
 
 # ccp
 . ~/.ccp-env
