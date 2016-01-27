@@ -22,6 +22,7 @@
   dh = diff HEAD
   dm = diff origin/master
   fo = fetch origin
+  jjh = !git config --global --replace-all user.name 'Josh Hill' && git config --global user.email jamesjoshuahill@gmail.com && git config --unset --global user.initials
   h = log --pretty=format:'%Cblue%h%Creset %C(yellow)%d%Creset %s  %Cgreen%cr, %an' --abbrev-commit --date=relative --graph
   hb = !git log origin/master..HEAD --pretty=format:'%Cblue%h%Creset %C(yellow)%d%Creset %s  %Cgreen%cr, %an' --abbrev-commit --date=relative --graph
   pl = pull --rebase
@@ -35,6 +36,7 @@
   pf = !git fo && git push --force
   st = status -sb
   undo = reset HEAD~1
+  unpair = !git config --global --replace-all user.name 'Josh Hill' && git config --global user.email jhill@pivotal.io && git config --unset --global user.initials
 [color]
   branch = auto
   diff = auto
