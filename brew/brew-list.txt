@@ -2,6 +2,7 @@ autoconf
 bazaar
 boost
 boot2docker
+cf-cli
 chromedriver
 cmake
 dinghy
