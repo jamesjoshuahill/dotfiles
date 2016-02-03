@@ -1,0 +1,16 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"GitGutter",
+		"GitHubinator",
+		"One Dark Color Scheme",
+		"Package Control",
+		"Theme - Cobalt2",
+		"Theme - Soda",
+		"Theme - Spacegray"
+	]
+}

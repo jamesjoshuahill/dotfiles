@@ -6,7 +6,7 @@
 [branch]
   autosetuprebase = always
 [core]
-  editor = vim
+  editor = subl -w
   autocrlf = input
   safecrlf = true
   excludesfile = /Users/josh/.gitignore
