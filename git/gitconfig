@@ -1,6 +1,6 @@
 [user]
-  name = Josh Hill
-  email = jhill@pivotal.io
+	name = Josh Hill
+	email = jhill@pivotal.io
 [push]
   default = upstream
 [branch]
@@ -8,8 +8,7 @@
 [core]
   editor = subl -w
   autocrlf = input
-  safecrlf = true
-  excludesfile = /Users/josh/.gitignore
+  excludesfile = ~/.gitignore
 [alias]
   aa = add --all
   br = branch -vv
