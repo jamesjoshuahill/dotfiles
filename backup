@@ -34,6 +34,7 @@ cp ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/Default\ \(OSX\
 
 # Sublime Text 3
 cp ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/*.sublime-settings sublime3/
+cp ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Default\ \(OSX\).sublime-keymap sublime3/
 
 # Atom
 cp ~/.atom/config.cson atom/
