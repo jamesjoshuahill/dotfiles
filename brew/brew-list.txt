@@ -17,6 +17,7 @@ git
 git-duet
 go
 godep
+gradle
 htop-osx
 httpie
 hub
@@ -24,6 +25,7 @@ jq
 leiningen
 libevent
 libyaml
+maven
 mercurial
 mongodb26
 mysql
