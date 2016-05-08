@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+USB_DRIVE_NAME="ginkgo"
+
+/usr/sbin/diskutil umount force "/Volumes/$USB_DRIVE_NAME"
