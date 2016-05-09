@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 set -e
 
@@ -19,16 +19,14 @@ ensure_ssh_agent_is_running() {
 }
 
 delete_all_ssh_identities() {
-  /usr/bin/ssh-add -D
+  ssh-add -D
 }
 
 add_private_key() {
   if [ -z "$HOURS" ]
   then
-    echo "Adding Josh's private key until $HOMETIME..."
     add_private_key_until_hometime
   else
-    echo "Adding Josh's private key for $HOURS hours..."
     add_private_key_for_hours
   fi
 }
@@ -42,13 +40,15 @@ add_private_key_until_hometime() {
   then
     echo "$HOMETIME is already history!"
     exit 1
+  else
+    echo "Adding Josh's private key until $HOMETIME..."
+    ssh-add -t "$seconds_remaining" "$PRIVATE_KEY"
   fi
-
-  /usr/bin/ssh-add -t "$seconds_remaining" "$PRIVATE_KEY"
 }
 
 add_private_key_for_hours() {
-  /usr/bin/ssh-add -t "${HOURS}h" "$PRIVATE_KEY"
+  echo "Adding Josh's private key for $HOURS hours..."
+  ssh-add -t "${HOURS}h" "$PRIVATE_KEY"
 }
 
 main
