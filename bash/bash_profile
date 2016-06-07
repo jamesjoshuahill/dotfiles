@@ -48,6 +48,3 @@ alias t='gittower .'
 
 # the fuck
 eval $(thefuck --alias)
-
-# ccp
-. ~/.ccp-env
