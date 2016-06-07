@@ -9,13 +9,9 @@ HOURS="$1"
 PRIVATE_KEY="/Volumes/${USB_DRIVE_NAME}/id_rsa"
 
 main() {
-  ensure_ssh_agent_is_running
   delete_all_ssh_identities
   add_private_key
-}
-
-ensure_ssh_agent_is_running() {
-  eval "$(ssh-agent -s)"
+  unmount_usb_drive
 }
 
 delete_all_ssh_identities() {
@@ -49,6 +45,10 @@ add_private_key_until_hometime() {
 add_private_key_for_hours() {
   echo "Adding Josh's private key for $HOURS hours..."
   ssh-add -t "${HOURS}h" "$PRIVATE_KEY"
+}
+
+unmount_usb_drive() {
+  /usr/sbin/diskutil umount force "/Volumes/$USB_DRIVE_NAME"
 }
 
 main
