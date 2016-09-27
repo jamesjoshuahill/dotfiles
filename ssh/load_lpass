@@ -5,7 +5,7 @@ set -e
 HOMETIME="18:00:00"
 HOURS="$1"
 LASTPASS_NAME="Personal/GitHub SSH key"
-PRIVATE_KEY="/tmp/id_rsa"
+PRIVATE_KEY="/tmp/lpass_rsa"
 OWNER="Josh"
 
 main() {
