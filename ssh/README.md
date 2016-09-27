@@ -10,18 +10,18 @@ This is how I load my private SSH key for GitHub on macOS for the day.
 
 1. Put your `load_lpass` script in another LastPass secure note e.g. "Personal/Load GitHub SSH Key"
 
+1. Ensure you have the LastPass CLI installed
+
+    `brew install lastpass-cli`
+
+1. Log in to LastPass
+
+    `lpass login USERNAME`
+
 1. Load your SSH key until hometime!
 
-    ```bash
-    brew install lastpass-cli
-    lpass login USERNAME
-    bash <(lpass show 'Personal/Load GitHub SSH Key' --notes)
-    ```
+    `bash <(lpass show 'Personal/Load GitHub SSH Key' --notes)`
 
 1. Or load your SSH key for 2 hours!
 
-    ```bash
-    brew install lastpass-cli
-    lpass login USERNAME
-    bash <(lpass show 'Personal/Load GitHub SSH Key' --notes) 2
-    ```
+    `bash <(lpass show 'Personal/Load GitHub SSH Key' --notes) 2`
