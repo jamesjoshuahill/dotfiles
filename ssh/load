@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 set -e
 
@@ -34,7 +34,7 @@ add_private_key_until_hometime() {
 
   if [ "$seconds_remaining" -lt 1 ]
   then
-    echo "$HOMETIME is already history!"
+    echo "$HOMETIME is history. Go home!"
     exit 1
   else
     echo "Adding Josh's private key until $HOMETIME..."
