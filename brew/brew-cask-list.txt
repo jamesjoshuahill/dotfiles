@@ -1,0 +1,13 @@
+1password-cli
+atom
+docker
+flycut
+google-chrome
+google-cloud-sdk
+iterm2
+java
+shiftit
+slack
+virtualbox
+visual-studio-code
+xquartz

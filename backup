@@ -2,6 +2,7 @@
 
 # Bash
 cp ~/.bash_profile bash/bash_profile
+cp ~/bin/loadkey bash/bin/loadkey
 
 # Powerline shell
 cp ~/.powerline-shell/config.py powerline-shell/
@@ -18,6 +19,7 @@ cp ~/.gitignore git/gitignore
 
 # Brew
 brew list > brew/brew-list.txt
+brew cask list > brew/brew-cask-list.txt
 
 # rbenv
 cp ~/.rbenv/default-gems rbenv/

@@ -24,6 +24,9 @@ if [ "$TERM" != "linux" ]; then
   PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 fi
 
+# ~/bin
+export PATH="$PATH:$HOME/bin"
+
 # aliases
 alias a='atom .'
 alias abp='atom ~/.bash_profile'

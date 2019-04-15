@@ -1,0 +1,69 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+HOMETIME="18:00:00"
+HOURS="${1:-}"
+ITEM_NAME="GitHub SSH key"
+PRIVATE_KEY_PATH="$PWD/key"
+OWNER="Josh"
+
+main() {
+  check_signed_in
+  delete_all_ssh_identities
+  save_private_key_to_file
+  add_private_key
+}
+
+check_signed_in() {
+  op list vaults
+}
+
+delete_all_ssh_identities() {
+  ssh-add -D
+}
+
+save_private_key_to_file() {
+  delete_private_key_file
+  op get item "$ITEM_NAME" | jq -r .details.notesPlain > "$PRIVATE_KEY_PATH"
+  chmod 400 "$PRIVATE_KEY_PATH"
+}
+
+add_private_key() {
+  if [ -z "$HOURS" ]
+  then
+    add_private_key_until_hometime
+  else
+    add_private_key_for_x_hours
+  fi
+}
+
+add_private_key_until_hometime() {
+  local now
+  now=$(date +%s)
+  local until
+  until=$( date -j -f "%T" $HOMETIME +%s )
+  local seconds_remaining
+  seconds_remaining=$((until - now))
+
+  if [ "$seconds_remaining" -lt 1 ]
+  then
+    echo "$HOMETIME is history. Go home!"
+    exit 1
+  else
+    echo "Adding $OWNER's private key until $HOMETIME..."
+    ssh-add -t "$seconds_remaining" "$PRIVATE_KEY_PATH"
+  fi
+}
+
+add_private_key_for_x_hours() {
+  echo "Adding $OWNER's private key for $HOURS hours..."
+  ssh-add -t "${HOURS}h" "$PRIVATE_KEY_PATH"
+}
+
+delete_private_key_file() {
+  rm -f "$PRIVATE_KEY_PATH"
+}
+
+trap delete_private_key_file EXIT
+main
