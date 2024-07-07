@@ -1,0 +1,47 @@
+{
+  "editor.fontSize": 18,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.rulers": [80, 120],
+  "editor.tabSize": 2,
+  "files.associations": {
+    ".Brewfile": "ruby",
+    "*.bats": "shellscript",
+    "Brewfile": "ruby",
+    "*.fish": "fish",
+    "Makefile.common": "makefile"
+  },
+  "files.autoSave": "onFocusChange",
+  "files.exclude": {
+    "**/.idea": true
+  },
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.currentLine.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.statusBar.enabled": false,
+  "[markdown]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "telemetry.telemetryLevel": "off",
+  "terminal.integrated.fontSize": 18,
+  "workbench.colorTheme": "Dracula",
+  "workbench.startupEditor": "newUntitledFile",
+  "[yaml]": {
+    "editor.formatOnSave": false
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "go.toolsManagement.autoUpdate": true,
+  "editor.lineHeight": 1.5,
+  "terminal.integrated.lineHeight": 1.2,
+  "window.commandCenter": true,
+  "go.testExplorer.showDynamicSubtestsInEditor": true,
+  "go.testFlags": ["-v", "-count=1"],
+  "go.lintTool": "golangci-lint",
+  "editor.fontFamily": "SFMono Nerd Font, Menlo, Monaco, 'Courier New', monospace"
+}

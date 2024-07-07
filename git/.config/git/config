@@ -1,0 +1,68 @@
+[alias]
+	a = add
+	ap = a -p
+	b = branch -vv
+	ba = b -a
+	bdm = !"DEFAULT=$(git default-branch); git branch --merged origin/$DEFAULT | grep -v $DEFAULT | xargs -n1 git branch --delete"
+	c = commit
+	ca = c --amend
+	cf = c --fixup
+	cp = cherry-pick
+	credit = blame
+	default-branch = !git remote show origin | grep 'HEAD branch' | cut -d' ' -f5
+	d = diff
+	ds = d --staged
+	dm = !git diff "$(git default-branch)"
+	f = fetch
+	frb = !git fetch && git rebase "origin/$(git default-branch)"
+	l = ll -n10
+	la = ll --all --graph
+	ll = log --pretty=coloured
+	p = push
+	pf = p --force-with-lease
+	pl = pull
+	rhh = reset --hard HEAD
+	rho = !git reset --hard "origin/$(git branch --show-current)"
+	r = restore
+	rp = r -p
+	rs = r --staged
+	rsp = rs -p
+	rb = rebase
+	rbia = !git rebase --interactive --autosquash "$(git default-branch)"
+	rbom = !git rebase "origin/$(git default-branch)"
+	s = status
+	sw = switch
+	uc = reset HEAD^
+[commit]
+	gpgsign = true
+	template = ~/.config/git/commit-template
+	verbose = true
+[init]
+	defaultBranch = main
+[interactive]
+	singlekey = true
+[pretty]
+	coloured = format:%C(auto)%h%d %s %C(green)(%cr)
+[pull]
+	rebase = true
+[push]
+	autoSetupRemote = true
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[user]
+	name = Josh Hill
+	email = jamesjoshuahill@users.noreply.github.com
+	signingkey = E46F72533424DE71
+
+# git-delta
+[core]
+	pager = delta
+[delta]
+	navigate = true
+	syntax-theme = Dracula
+[diff]
+	colorMoved = zebra
+[interactive]
+	diffFilter = delta --color-only
+[merge]
+	conflictstyle = diff3

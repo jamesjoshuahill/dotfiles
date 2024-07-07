@@ -1,0 +1,5 @@
+#!/usr/bin/env fish
+
+micro -plugin install filemanager
+micro -plugin install fzf
+micro -plugin update

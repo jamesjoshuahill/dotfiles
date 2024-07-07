@@ -1,0 +1,20 @@
+#!/usr/bin/env fish
+
+set installed (mktemp)
+trap "rm -f $installed" EXIT
+
+set copy "$HOME/.dotfiles/visual-studio-code/Library/Application Support/Code/User/extensions.txt"
+
+code --list-extensions >$installed
+
+if [ ! -s $installed ]
+  echo "No extensions installed."
+  echo "Installing extensions..."
+  xargs -n 1 code --force --install-extension <$copy
+else if ! diff $installed $copy >/dev/null
+  echo "Extensions have changed."
+  echo "Updating copy..."
+  cp $installed $copy
+else
+  echo "Extensions already installed."
+end

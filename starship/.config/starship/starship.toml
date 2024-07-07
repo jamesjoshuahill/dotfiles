@@ -1,0 +1,38 @@
+# Don't print a new line at the start of the prompt
+add_newline = false
+
+[aws]
+disabled = true
+
+[[battery.display]]
+threshold = 5
+
+[docker_context]
+disabled = true
+
+[golang]
+disabled = true
+
+[gcloud]
+disabled = true
+
+[gradle]
+disabled = true
+
+[java]
+disabled = true
+
+[kubernetes]
+disabled = true
+
+[nodejs]
+disabled = true
+
+[python]
+disabled = true
+
+[terraform]
+disabled = true
+
+[vagrant]
+disabled = true

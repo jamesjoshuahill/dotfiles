@@ -1,0 +1,57 @@
+#!/usr/bin/env bash
+
+set -eu
+
+main() {
+  generate_new_key
+  list_gpg_keys
+  update_github
+  update_keychain
+  update_git
+}
+
+log_step() {
+  local message=$1
+  echo -e "\033[1m--> ${message}\033[0m"
+}
+
+generate_new_key() {
+  log_step "Generate new GPG key"
+  echo "- Use RSA and RSA, 4096 bits, expires in 24m"
+  gpg --full-generate-key
+}
+
+list_gpg_keys() {
+  log_step "List GPG keys"
+  gpg --list-secret-keys --keyid-format=long
+}
+
+update_github() {
+  log_step "Update GitHub GPG Keys"
+  echo "- Identify the KEY_ID for your new key in the list above, such as:
+
+sec   rsa4096/_____KEY_ID_____ yyyy-mm-dd [SC] [expires: yyyy-mm-dd]
+"
+  echo "- Copy your new GPG public key, run: gpg --armour --export KEY_ID"
+  echo "- Go to to: https://github.com/settings/keys"
+  read -n1 -rp "Have you added your new GPG key to GitHub? "
+  echo
+  read -n1 -rp "Have you removed your previous GPG key from GitHub? "
+  echo
+}
+
+update_keychain() {
+  log_step "Update GPG keychain"
+  echo "- Delete your old GPG key, run: gpg --delete-secret-and-public-key KEY_ID"
+  read -n1 -rp "Have you deleted your previous key from GPG? "
+  echo
+}
+
+update_git() {
+  log_step "Update git config"
+  echo "- Configure your new signing key, run: git config --global user.signingkey KEY_ID"
+  read -n1 -rp "Have you updated your git config? "
+  echo
+}
+
+main

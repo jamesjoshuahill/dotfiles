@@ -1,0 +1,85 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+main() {
+  stow_config
+  configure_homebrew
+  update_homebrew
+  generate_homebrew_bundle
+  install_homebrew_bundle
+  run_install_scripts
+  log_success "Finished"
+}
+
+stow_config() {
+  log_step "Stow config"
+  stow --target "$HOME" stow # configure stow first
+  for package in */
+  do
+    stow --target "$HOME" "$package"
+  done
+}
+
+configure_homebrew() {
+  export HOMEBREW_NO_ENV_HINTS=1
+  export HOMEBREW_NO_ANALYTICS=1
+  export HOMEBREW_NO_INSECURE_REDIRECT=1
+}
+
+update_homebrew() {
+  log_step "Update Homebrew"
+  brew update
+}
+
+generate_homebrew_bundle() {
+  log_step "Generate Homebrew bundle"
+  "$HOME/bin/generate-homebrew-bundle"
+}
+
+install_homebrew_bundle() {
+  log_step "Check Homebrew bundle"
+  if ! brew bundle check --global --verbose
+  then
+    log_step "Install Homebrew bundle"
+    brew bundle install --global
+  fi
+}
+
+run_install_scripts() {
+  shopt -s globstar nullglob
+  for installer in */install
+  do
+    log_step "Install $(dirname "$installer")"
+    # shellcheck disable=SC1090
+    "$installer"
+  done
+}
+
+terminate() {
+  if [ $? -gt 0 ]
+  then
+    log_error "Error"
+  fi
+}
+
+log_step() {
+  local message=$1
+  echo -e "\033[1m──→ ${message}\033[0m"
+}
+
+log_success() {
+  local message=$1
+  echo -e "\033[1;32m──→ ${message}\033[0m"
+}
+
+log_error() {
+  local message=$1
+  echo -e "\033[1;31m──X ${message}\033[0m"
+}
+
+(
+  trap terminate EXIT
+  cd "$HOME/.dotfiles/"
+  main
+)
