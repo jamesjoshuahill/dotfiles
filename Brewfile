@@ -5,6 +5,7 @@ cask 'flycut'
 cask 'goland'
 cask 'hey'
 cask 'rectangle'
+cask 'warp'
 cask 'zoom'
 # command line
 brew 'bash'
