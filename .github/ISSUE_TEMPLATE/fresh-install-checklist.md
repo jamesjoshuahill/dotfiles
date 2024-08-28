@@ -126,6 +126,12 @@ This assumes a clean install of MacOS Sonoma.
   - [ ] Create a recovery key and do not use my iCloud account
   - [ ] Store recovery key in 1Password
 
+- Flycut
+
+  - [ ] Tick: Preferences > General > Sticky bezel
+  - [ ] Tick: Preferences > General > Launch Flycut on login
+  - [ ] Select 'Black scissors': Appearance > Menu item icon
+
 - GitHub
 
   - [ ] Run `rotate-ssh-key` to generate a new SSH key.
@@ -135,11 +141,6 @@ This assumes a clean install of MacOS Sonoma.
 - git-secrets
 
   - [ ] Run `find . -name ".git" | rev | cut -d'/' -f2- | rev | xargs -n1 git init` to add git-secrets hooks to any existing repositories
-
-- Flycut
-
-  - [ ] Tick: General > Launch Flycut at login
-  - [ ] Select: Appearance > Menu item icon > Black scissors
 
 - iTerm
 
