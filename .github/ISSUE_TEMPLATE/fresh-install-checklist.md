@@ -10,7 +10,7 @@ assignees: ""
 
 ## Bootstrap
 
-This assumes a clean install of MacOS Sonoma, connected to wi-fi and signed into iCloud.
+This assumes a clean install of MacOS Sonoma.
 
 ## Secure your Mac
 
