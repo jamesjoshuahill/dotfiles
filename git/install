@@ -1,0 +1,3 @@
+#!/usr/bin/env fish
+
+touch ~/.config/git/commit-template
