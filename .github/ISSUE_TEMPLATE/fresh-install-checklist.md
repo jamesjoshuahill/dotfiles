@@ -144,8 +144,9 @@ This assumes a clean install of MacOS Sonoma.
 
 - iTerm
 
-  - [ ] Tick: General > Preferences > Load preferences from a custom folder or URL and type in the `~/.config/iterm` directory.
-  - [ ] Tick: General > Preferences > Save changes to folder when iTerm2 quits
+  - [ ] Tick: General > Settings > Load settings from a custom folder or URL and type in the `~/.config/iterm` directory.
+  - [ ] Select 'Automatically': General > Settings > Save changes
+  - [ ] Click: Save now & Discard local changes
   - [ ] Restart iTerm
 
 - Rectangle
