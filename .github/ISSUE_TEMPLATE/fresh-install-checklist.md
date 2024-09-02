@@ -113,7 +113,12 @@ This assumes a clean install of MacOS Sonoma.
 
   - [ ] Select: Preferences > Resources > Memory > 8 GB
   - [ ] Click: Apply & Restart
- 
+
+- Fantastical
+
+  - [ ] Install Fantastical from Mac App Store
+  - [ ] Login to Flexibits account
+
 - Finder
 
   - [ ] Go > Computer
