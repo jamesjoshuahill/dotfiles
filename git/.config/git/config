@@ -34,6 +34,7 @@
 	sw = switch
 	uc = reset HEAD^
 [commit]
+	gpgsign = true
 	template = ~/.config/git/commit-template
 	verbose = true
 [init]
@@ -46,9 +47,12 @@
 	rebase = true
 [push]
 	autoSetupRemote = true
+[url "git@github.com:"]
+	insteadOf = https://github.com/
 [user]
 	name = Josh Hill
 	email = jamesjoshuahill@users.noreply.github.com
+	signingkey = 7F9ACEAEBCA3267F
 
 # git-delta
 [core]
