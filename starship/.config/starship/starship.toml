@@ -1,10 +1,6 @@
 # Don't print a new line at the start of the prompt
 add_newline = false
 
-# Don't print a new line after the prompt - for compatability with Warp terminal
-[line_break]
-disabled = true
-
 [aws]
 disabled = true
 
