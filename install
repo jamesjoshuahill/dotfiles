@@ -14,7 +14,7 @@ main() {
 
 stow_config() {
   log_step "Stow config"
-  stow --target "$HOME" stow # configure stow first
+  stow --target "$HOME" --ignore Brewfile stow # configure stow first
   for package in */
   do
     stow --target "$HOME" "$package"
