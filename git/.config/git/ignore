@@ -1,5 +1,7 @@
 # Apple "Desktop services store"
 .DS_Store
 
-# JetBrains editors
+# Editors
 .idea
+.vscode
+.zed
