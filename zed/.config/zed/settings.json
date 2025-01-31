@@ -9,7 +9,7 @@
 {
   "ui_font_size": 16,
   "buffer_font_family": "SFMono Nerd Font",
-  "buffer_font_size": 16,
+  "buffer_font_size": 18,
   "theme": {
     "mode": "system",
     "light": "One Light",
@@ -18,5 +18,6 @@
   "telemetry": {
     "diagnostics": false,
     "metrics": false
-  }
+  },
+  "base_keymap": "JetBrains"
 }
