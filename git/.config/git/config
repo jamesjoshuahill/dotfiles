@@ -28,41 +28,61 @@
 	rs = r --staged
 	rsp = rs -p
 	rb = rebase
-	rbia = !git rebase --interactive --autosquash "$(git default-branch)"
+	rbi = !git rebase --interactive "$(git default-branch)"
 	rbom = !git rebase "origin/$(git default-branch)"
 	s = status
 	sw = switch
 	uc = reset HEAD^
+[column]
+	ui = auto
+[core]
+	pager = delta
+[branch]
+	sort = -committerdate
 [commit]
 	gpgsign = true
 	template = ~/.config/git/commit-template
 	verbose = true
+[delta]
+	navigate = true
+	syntax-theme = Dracula
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
+[fetch]
+	all = true
+	prune = true
+	pruneTags = true
+[help]
+	autocorrect = prompt
 [init]
 	defaultBranch = main
 [interactive]
+	diffFilter = delta --color-only
 	singlekey = true
+[merge]
+	conflictstyle = zdiff3
 [pretty]
 	coloured = format:%C(auto)%h%d %s %C(green)(%cr)
 [pull]
 	rebase = true
 [push]
 	autoSetupRemote = true
+	followTags = true
+[rebase]
+	autoSquash = true
+	autoStash = true
+	updateRefs = true
+[rerere]
+	autoupdate = true
+	enabled = true
+[tag]
+	sort = version:refname
 [url "git@github.com:"]
 	insteadOf = https://github.com/
 [user]
-	name = Josh Hill
 	email = jamesjoshuahill@users.noreply.github.com
+	name = Josh Hill
 	signingkey = 7F9ACEAEBCA3267F
-
-# git-delta
-[core]
-	pager = delta
-[delta]
-	navigate = true
-	syntax-theme = Dracula
-[diff]
-	colorMoved = zebra
-[interactive]
-	diffFilter = delta --color-only
-[merge]
-	conflictstyle = diff3
