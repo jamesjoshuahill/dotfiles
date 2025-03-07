@@ -4,6 +4,7 @@ cask '1password'
 cask 'flycut'
 cask 'hey'
 cask 'rectangle'
+cask 'signal'
 cask 'warp'
 cask 'zoom'
 # command line
