@@ -55,6 +55,10 @@
 	all = true
 	prune = true
 	pruneTags = true
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
 [help]
 	autocorrect = prompt
 [init]
@@ -85,4 +89,4 @@
 [user]
 	email = jamesjoshuahill@users.noreply.github.com
 	name = Josh Hill
-	signingkey = 01227EE342E52CBB
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIM5V/xdcV0L87nymdT/PNGQKNyCIL6lvsaVBZI8ZbCvC
