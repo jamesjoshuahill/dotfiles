@@ -1,6 +1,4 @@
 brew 'git'
 brew 'git-delta'
 brew 'git-secrets'
-brew 'gpg'
-brew 'pinentry-mac'
 cask '1password-cli'
