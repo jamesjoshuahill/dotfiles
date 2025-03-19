@@ -108,6 +108,10 @@ This assumes a clean install of MacOS Sonoma.
 
   - [ ] Sign in
   - [ ] Install Safari browser extension
+  - [ ] Select: Settings > Developer > Show 1Password Developer Experience
+  - [ ] Select: Settings > Developer > Check for developer credentials on disk
+  - [ ] Select: Settings > Developer > Integrate with 1Password CLI
+  - [ ] Select: Settings > Developer > Set up the SSH Agent
 
 - Docker
 
