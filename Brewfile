@@ -5,6 +5,7 @@ cask 'flycut'
 cask 'hey'
 cask 'rectangle'
 cask 'signal'
+cask 'via'
 cask 'warp'
 cask 'zoom'
 # command line
