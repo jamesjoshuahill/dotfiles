@@ -3,7 +3,7 @@ cask_args adopt: true
 cask '1password'
 cask 'dropbox'
 cask 'flycut'
-cask 'hey'
+cask 'hey-desktop'
 cask 'rectangle'
 cask 'signal'
 cask 'via'
