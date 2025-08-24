@@ -1,6 +1,7 @@
 cask_args adopt: true
 # apps
 cask '1password'
+cask 'dropbox'
 cask 'flycut'
 cask 'hey'
 cask 'rectangle'
