@@ -10,5 +10,9 @@ config.font = wezterm.font 'SFMono Nerd Font'
 config.font_size = 18.0
 config.line_height = 1.2
 
+config.keys = {
+  {key="Enter", mods="SHIFT", action=wezterm.action{SendString="\x1b\r"}},
+}
+
 -- and finally, return the configuration to wezterm
 return config
