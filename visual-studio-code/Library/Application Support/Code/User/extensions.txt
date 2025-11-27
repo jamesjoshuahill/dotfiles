@@ -14,6 +14,7 @@ esbenp.prettier-vscode
 fabiospampinato.vscode-diff
 golang.go
 isudox.vscode-jetbrains-keybindings
+ms-azuretools.vscode-containers
 ms-azuretools.vscode-docker
 ms-kubernetes-tools.vscode-kubernetes-tools
 ms-vscode.makefile-tools
