@@ -1,0 +1,16 @@
+{
+  "alwaysThinkingEnabled": true,
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/reminder/reminder.fish"
+          }
+        ]
+      }
+    ]
+  }
+}
