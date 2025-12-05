@@ -56,6 +56,12 @@ config.keys = {
 			confirm = true
 		},
 	},
+	-- Toggle pane zoom
+	{
+		key = 'Enter',
+		mods = 'CMD|SHIFT',
+		action = wezterm.action.TogglePaneZoomState,	
+	},
 }
 
 -- and finally, return the configuration to wezterm
