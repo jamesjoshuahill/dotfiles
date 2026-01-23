@@ -1,2 +1,2 @@
 cask 'claude'
-brew 'npm'
+cask 'claude-code'

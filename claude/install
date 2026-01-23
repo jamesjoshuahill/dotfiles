@@ -1,3 +1,0 @@
-#!/usr/bin/env fish
-
-npm install -g @anthropic-ai/claude-code
