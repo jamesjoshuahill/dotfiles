@@ -1,3 +1,4 @@
+anthropic.claude-code
 bierner.github-markdown-preview
 bierner.markdown-checkbox
 bierner.markdown-emoji
@@ -22,3 +23,4 @@ redhat.vscode-yaml
 skyapps.fish-vscode
 tamasfe.even-better-toml
 timonwong.shellcheck
+yzhang.markdown-all-in-one

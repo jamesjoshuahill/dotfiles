@@ -9,11 +9,11 @@
     "*.bats": "shellscript",
     "Brewfile": "ruby",
     "*.fish": "fish",
-    "Makefile.common": "makefile"
+    "Makefile.common": "makefile",
   },
   "files.autoSave": "onFocusChange",
   "files.exclude": {
-    "**/.idea": true
+    "**/.idea": true,
   },
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
@@ -24,17 +24,17 @@
   "gitlens.statusBar.enabled": false,
   "[markdown]": {
     "editor.formatOnSave": false,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "telemetry.telemetryLevel": "off",
   "terminal.integrated.fontSize": 18,
   "workbench.colorTheme": "Dracula",
   "workbench.startupEditor": "newUntitledFile",
   "[yaml]": {
-    "editor.formatOnSave": false
+    "editor.formatOnSave": false,
   },
   "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+    "editor.defaultFormatter": "vscode.json-language-features",
   },
   "go.toolsManagement.autoUpdate": true,
   "editor.lineHeight": 1.5,
@@ -43,5 +43,6 @@
   "go.testExplorer.showDynamicSubtestsInEditor": true,
   "go.testFlags": ["-v", "-count=1"],
   "go.lintTool": "golangci-lint",
-  "editor.fontFamily": "SFMono Nerd Font, Menlo, Monaco, 'Courier New', monospace"
+  "editor.fontFamily": "SFMono Nerd Font, Menlo, Monaco, 'Courier New', monospace",
+  "claudeCode.preferredLocation": "panel",
 }
