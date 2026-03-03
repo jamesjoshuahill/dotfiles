@@ -28,7 +28,7 @@
   },
   "telemetry.telemetryLevel": "off",
   "terminal.integrated.fontSize": 18,
-  "workbench.colorTheme": "Dracula",
+  "workbench.colorTheme": "Dracula Theme",
   "workbench.startupEditor": "newUntitledFile",
   "[yaml]": {
     "editor.formatOnSave": false,
@@ -45,4 +45,5 @@
   "go.lintTool": "golangci-lint",
   "editor.fontFamily": "SFMono Nerd Font, Menlo, Monaco, 'Courier New', monospace",
   "claudeCode.preferredLocation": "panel",
+  "workbench.preferredDarkColorTheme": "Dracula Theme",
 }
