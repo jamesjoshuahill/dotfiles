@@ -57,9 +57,10 @@ run_install_scripts() {
 }
 
 terminate() {
-  if [ $? -gt 0 ]
+  local exit_code=$?
+  if [ $exit_code -gt 0 ]
   then
-    log_error "Error"
+    log_error "Error (exit code ${exit_code})"
   fi
 }
 

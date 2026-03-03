@@ -151,13 +151,6 @@ This assumes a clean install of MacOS Sonoma.
 
   - [ ] Run `find . -name ".git" | rev | cut -d'/' -f2- | rev | xargs -n1 git init` to add git-secrets hooks to any existing repositories
 
-- iTerm
-
-  - [ ] Tick: General > Settings > Load settings from a custom folder or URL and type in the `~/.config/iterm` directory.
-  - [ ] Select 'Automatically': General > Settings > Save changes
-  - [ ] Click: Save now & Discard local changes
-  - [ ] Restart iTerm
-
 - Rectangle
 
   - [ ] Tick: Settings > Launch on login
