@@ -10,6 +10,7 @@ cask 'loom'
 cask 'rectangle'
 cask 'signal'
 cask 'via'
+cask 'warp'
 cask 'zoom'
 # command line
 brew 'bash'
