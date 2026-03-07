@@ -1,1 +1,2 @@
 cask 'temurin@25'
+brew 'gradle'
