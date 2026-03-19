@@ -1,4 +1,7 @@
 {
+  "env": {
+    "DISABLE_AUTOUPDATER": "1"
+  },
   "hooks": {
     "UserPromptSubmit": [
       {
@@ -15,6 +18,5 @@
   "enabledPlugins": {
     "gopls-lsp@claude-plugins-official": true
   },
-  "alwaysThinkingEnabled": true,
-  "model": "opus"
+  "alwaysThinkingEnabled": true
 }
