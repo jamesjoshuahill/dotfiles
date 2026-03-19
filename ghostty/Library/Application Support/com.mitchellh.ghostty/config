@@ -1,3 +1,4 @@
+adjust-cell-height = 20%
 font-family = "SFMono Nerd Font"
-theme = "Dracula"
 font-size = 18
+theme = "Dracula custom"
